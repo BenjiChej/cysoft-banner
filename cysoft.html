@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cysoft - Banner</title>
+    <style>
+        /* Estilos generales para el banner */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: transparent;
+            font-family: Arial, sans-serif;
+        }
+        
+        .banner {
+            text-align: center;
+            position: relative;
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(to right, #003366, #3399ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: shimmer 3s infinite;
+        }
+
+        /* Animación para el brillo que sube y baja */
+        @keyframes shimmer {
+            0% {
+                text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f;
+            }
+            50% {
+                text-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f;
+            }
+            100% {
+                text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        Cysoft, conectando mundos
+    </div>
+
+</body>
+</html>
